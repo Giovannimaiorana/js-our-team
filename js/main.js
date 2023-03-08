@@ -18,3 +18,4 @@ const membriteam  = [
         'Nome': 'Barbara Ramos', 'Ruolo':'Graphic Designer', 'Immagine':' barbara-ramos-graphic-designer.jpg'
     }
 ];
+console.log(membriteam);

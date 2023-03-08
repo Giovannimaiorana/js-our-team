@@ -22,10 +22,13 @@ const membriteam  = [
 ];
 console.log(membriteam);
 
-const teamlist = document.getElementById("container");
+const containerDom = document.getElementById('card');
 
-const membername = membriteam[i].Nome;
-const meberrole = membriteam[i].Ruolo;
-const memberImg = membriteam[i].Immagine;
+for(let i = 0 ; i < membriteam.length; i++){
+    const people = membriteam[i];
 
-teamlist.append(membername);
+    for(let key in people) {
+        console.log(key +' '+ people[key]);
+        containerDom.innerHTML+=(key +' '+ people[key])
+    }
+}

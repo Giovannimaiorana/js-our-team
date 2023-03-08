@@ -1,3 +1,5 @@
+
+
 const membriteam  = [
     {
         'Nome': 'Wayne Barnett', 'Ruolo':'Founder & CEO', 'Immagine':' wayne-barnett-founder-ceo.jpg'
@@ -19,3 +21,11 @@ const membriteam  = [
     }
 ];
 console.log(membriteam);
+
+const teamlist = document.getElementById("container");
+
+const membername = membriteam[i].Nome;
+const meberrole = membriteam[i].Ruolo;
+const memberImg = membriteam[i].Immagine;
+
+teamlist.append(membername);
